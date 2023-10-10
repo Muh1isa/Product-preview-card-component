@@ -1,0 +1,149 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #fef6ec;
+}
+
+.wrapper {
+    display: flex;
+    align-items: center;
+}
+
+img {
+    border-bottom-left-radius: 25px;
+    border-top-left-radius: 25px;
+}
+
+.mobile-img {
+    display: none;
+}
+
+.right {
+    width: 420px;
+    height: 600px;
+    background-color: #fff;
+    padding: 50px;
+    border-bottom-right-radius: 25px;
+    border-top-right-radius: 25px;
+}
+
+span {
+    font-size: 19px;
+    font-family: 'Montserrat', sans-serif; 
+    letter-spacing: 5px; 
+    text-transform: uppercase;
+    color: hsl(228, 12%, 48%);
+}
+
+h1 {
+    max-width: 300px;
+    font-size: 42px;
+    font-family: 'Fraunces', serif;
+    line-height: 40px;
+    margin: 20px 0 30px 0;
+}
+
+.text {
+    font-size: 19px;
+    font-family: 'Montserrat', sans-serif;
+    line-height: 30px; 
+    color: hsl(228, 12%, 48%);
+    margin: 0 0 40px 0;
+}
+
+.links-box {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.price {
+    font-size: 45px;
+    font-family: 'Fraunces', serif;
+    text-decoration: none;
+    color: hsl(158, 36%, 37%);
+}
+
+.nonprice {
+    font-family: 'Montserrat', sans-serif;
+    text-decoration: line-through;  
+    color: hsl(228, 12%, 48%);
+}
+
+button {
+    width: 100%;
+    height: 56px;
+    font-size: 17px;
+    font-family: 'Montserrat', sans-serif;
+    color: #fff;
+    background-color: hsl(158, 36%, 37%);
+    margin: 30px 0 0 0;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: .5s;
+}
+button:hover {
+    background-color: hsl(228, 12%, 48%);
+}
+
+.fa-cart-shopping {
+    margin: 0 10px 0 0;
+}
+
+
+@media screen and (max-width: 400px) {
+    body {
+        display: block;
+        padding: 6px;
+    }
+    .wrapper {
+        display: block;
+    }
+    .display-img {
+        display: none;
+    }
+    .mobile-img {
+        display: block;
+        width: 100%;
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+        border-bottom-left-radius: 0px;
+        /* margin: 20px 0 0 0; */
+    }
+    .right {
+        width: 100%;
+        height: 460px;
+        border-bottom-left-radius: 20px;
+        border-bottom-right-radius: 20px;
+        border-top-right-radius: 0px;
+        padding: 30px;
+    }
+    span {
+        font-size: 16px;
+    }
+    h1 {
+        font-size: 36px;
+        margin: 10px 0;
+    }
+    .text {
+        font-size: 14px;
+        line-height: 24px;
+        margin: 0 0 20px 0;
+    }
+    .price {
+        font-size: 36px;
+    }
+    button {
+        font-size: 16px;
+        margin: 20px 0;
+    }
+}
